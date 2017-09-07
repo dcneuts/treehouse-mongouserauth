@@ -3,7 +3,7 @@ var router = express.Router();
 
 // GET / Register
 router.get('/register', function (req, res, next) {
-	return res.send("Register today!");
+	return res.render('register', { title: 'Sign Up' });
 });
 
 // POST / Register to receive info from user for DB
