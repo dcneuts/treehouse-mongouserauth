@@ -5,13 +5,13 @@
   "author": "Treehouse Island, Inc.",
   "private": true,
   "scripts": {
-// "start": "node ./app"
-    // removed for Windows compatibility with Nodemon
+    "start": "node ./app"
   },
   "dependencies": {
     "bcrypt": "^1.0.3",
     "body-parser": "^1.13.3",
     "express": "^4.13.4",
+    "express-session": "^1.15.5",
     "mongoose": "^4.11.10",
     "pug": "^2.0.0-beta2"
   },

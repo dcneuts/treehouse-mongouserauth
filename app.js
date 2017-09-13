@@ -1,7 +1,15 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var session = require('express-session');
 var app = express();
+
+// use session for tracking logins
+app.use(session({
+    secret: 'treehouse loves you',
+    resave: true,
+    saveUninitialized: false
+}));
 
 // monogodb connection
 mongoose.connect("mongodb://localhost:27017/bookworm");
