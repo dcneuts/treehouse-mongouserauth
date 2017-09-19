@@ -2,26 +2,31 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var session = require('express-session');
+var MongoStore = require('connect-mongo')(session);
 var app = express();
-
-// use session for tracking logins
-app.use(session({
-    secret: 'treehouse loves you',
-    resave: true,
-    saveUninitialized: false
-}));
-
-// user ID available for use in templates
-app.use(function (req, res, next) {
-    res.locals.currentUser = req.session.userId;
-    next();
-});
 
 // monogodb connection
 mongoose.connect("mongodb://localhost:27017/bookworm");
 var db = mongoose.connection;
 // error handler for mongodb
 db.on('error', console.error.bind(console, 'connection error:'));
+
+// use session for tracking logins
+// stores Mongo sessions instead of RAM
+app.use(session({
+	secret: 'treehouse loves you',
+	resave: true,
+	saveUninitialized: false
+	store: new MongoStore({
+		mongooseConnection: db
+	})
+}));
+
+// user ID available for use in templates
+app.use(function (req, res, next) {
+	res.locals.currentUser = req.session.userId;
+	next();
+});
 
 // parse incoming requests
 app.use(bodyParser.json());
