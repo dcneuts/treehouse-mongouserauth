@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7d269dc4-04a4-492e-b6ce-2fe3a07e99cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/middleware/index.js" afterPath="$PROJECT_DIR$/middleware/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +17,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2464">
-              <caret line="112" column="27" lean-forward="false" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
+            <state relative-caret-position="198">
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -234,7 +233,7 @@
       <workItem from="1505453997269" duration="2757000" />
       <workItem from="1505548208808" duration="129000" />
       <workItem from="1505548414184" duration="302000" />
-      <workItem from="1505803366119" duration="3393000" />
+      <workItem from="1505803366119" duration="3528000" />
     </task>
     <task id="LOCAL-00001" summary="Created registration page for app using Pug, installed and integrated Mongoose to work with MongoDB, connected them and configured a DB connection.">
       <created>1504757904005</created>
@@ -299,11 +298,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505807591629</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Created middleware function to ensure password protected content, used about page as test">
+      <created>1505807847669</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1505807847669</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25247000" />
+    <option name="totallyTimeSpent" value="25382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -371,7 +377,8 @@
     <MESSAGE value="Modified login and profile page" />
     <MESSAGE value="Make user ID available for use in the template by adding function under session tracking" />
     <MESSAGE value="Middleware added to handle users who are both logged in and logged out to hide template pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Middleware added to handle users who are both logged in and logged out to hide template pages" />
+    <MESSAGE value="Created middleware function to ensure password protected content, used about page as test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created middleware function to ensure password protected content, used about page as test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -779,8 +786,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2464">
-          <caret line="112" column="27" lean-forward="false" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
+        <state relative-caret-position="198">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding />
         </state>
       </provider>
